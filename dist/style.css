@@ -13,3 +13,12 @@
 
 /* Preserve contrast inside the logo strapline on dark hero backgrounds. */
 header .logo{width:200px;height:auto;display:block}header>a{flex-shrink:0}@media(max-width:950px){header .logo{width:190px}}@media(max-width:640px){header .logo{width:185px;max-width:55vw;height:auto}}
+
+/* Stable slider geometry: every slide shares the same content slots. */
+.showcase-card{height:420px;display:grid;grid-template-rows:108px 85px 46px 1fr;gap:14px}
+.showcase-card h2{margin:0;font-size:28px;line-height:1.15;letter-spacing:-.035em;overflow-wrap:anywhere}
+.showcase-card p{margin:0;align-self:start}
+.showcase-details{justify-self:start;align-self:start;min-height:46px;padding:13px 24px;font-weight:600;box-shadow:0 5px 14px #0086c725}
+.showcase-details:hover{background:var(--deep);color:white}
+.showcase-controls{margin:0;align-self:end}
+@media(max-width:640px){.showcase{height:540px;padding:20px}.showcase-card{height:460px;padding:24px;grid-template-rows:120px 105px 46px 1fr}.showcase-card h2{font-size:27px}}
