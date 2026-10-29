@@ -12,4 +12,4 @@
 @media(max-width:640px){.page-hero.engineering{background-image:linear-gradient(90deg,#002b4bea,#003952b8),var(--page-photo);background-position:60% center}.page-hero h1{font-size:clamp(34px,9.7vw,45px)}.page-hero.engineering .hero-1c{position:static;margin-top:25px;width:70px}.hero h1{font-size:19vw}.hero-actions{flex-wrap:wrap}}
 
 /* Preserve contrast inside the logo strapline on dark hero backgrounds. */
-header .logo{width:250px;height:auto;display:block}header>a{flex-shrink:0}@media(max-width:950px){header .logo{width:220px}}@media(max-width:640px){header .logo{width:230px;max-width:60vw;height:auto}}
+header .logo{width:200px;height:auto;display:block}header>a{flex-shrink:0}@media(max-width:950px){header .logo{width:190px}}@media(max-width:640px){header .logo{width:185px;max-width:55vw;height:auto}}
