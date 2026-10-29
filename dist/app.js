@@ -20,7 +20,7 @@ document.addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e
 fetch('content.json').then(r=>r.json()).then(data=>{pages=data;route();window.addEventListener('hashchange',route)}).catch(()=>{$('#main').innerHTML='<p>Не удалось загрузить страницу. Обновите её.</p>'});
 // Page art direction: shared identity, distinct editorial compositions.
 const pageArt={
- engineering:['ИНЖЕНЕРНОЕ НАПРАВЛЕНИЕ','От проекта<br>к результату.','service-engineering','engineering'],
+ engineering:['ИНЖЕНЕРНОЕ НАПРАВЛЕНИЕ','От проекта<br>к результату.','engineering-blueprints','engineering'],
  design:['ПРОЕКТИРОВАНИЕ И ИЗЫСКАНИЯ','Продумано<br>до начала работ.','service-design','engineering'],
  estimates:['СМЕТНОЕ СОПРОВОЖДЕНИЕ','Стоимость проекта.<br>В деталях.','service-estimates','engineering'],
  pto:['ПТО И ДОКУМЕНТАЦИЯ','Каждая работа.<br>Каждый документ.','service-pto','engineering'],
