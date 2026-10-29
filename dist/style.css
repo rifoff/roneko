@@ -66,3 +66,13 @@ header .logo{width:200px;height:auto;display:block}header>a{flex-shrink:0}@media
 @media(max-width:950px){.experience-card{padding:30px}.experience-card h3{font-size:29px}.experience-heading{gap:30px}.experience-grid{gap:24px}}
 @media(max-width:640px){.experience-heading,.experience-grid{grid-template-columns:1fr;gap:24px}.experience-heading{margin-bottom:28px}.experience-card{padding:28px}.experience-card h3{font-size:29px}.experience-card p{font-size:14px}.experience-button{font-size:12px;padding:14px 20px;gap:16px}.experience-card .eyebrow{font-size:9px}.experience-icon{margin-bottom:24px}}
 @media(prefers-reduced-motion:reduce){.experience-button{transition:none}.experience-button:hover{transform:none}}
+
+/* Project design: one aligned editorial sequence, without alternating panels. */
+.design-project-row{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(0,1.35fr);gap:32px;align-items:start;margin:0;padding:46px 0;border-bottom:1px solid #d4e6ef}
+.design-project-row:first-child{margin-top:65px;border-top:1px solid #d4e6ef}
+.design-project-number{font-size:14px;color:#008bc5;font-weight:600;padding-top:7px;letter-spacing:.08em}
+.design-project-row h2{font-size:clamp(25px,2.6vw,36px);line-height:1.15;margin:0;color:#005681;max-width:440px}
+.design-project-copy p{margin:0 0 16px;line-height:1.65}.design-project-copy p:last-child{margin-bottom:0}
+.design-project-cta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:60px;align-items:center;margin:48px 0 75px;padding:48px;background:linear-gradient(115deg,#004e77,#008dc1)}
+.design-project-cta>div{max-width:none}.design-project-cta h2{font-size:clamp(28px,3vw,40px);margin:0;line-height:1.15}.design-project-cta .eyebrow{color:#a9dff4;margin-bottom:20px}.design-project-action p{margin:0 0 26px;line-height:1.65}.design-project-action .button{display:inline-flex;background:#fff;color:#007eb4;padding:16px 25px;transition:background .2s,transform .2s,box-shadow .2s}.design-project-action .button:hover{background:#e2f5ff;transform:translateY(-2px);box-shadow:0 8px 24px #00335440}.design-project-action .button:focus-visible{outline:2px solid white;outline-offset:5px}
+@media(max-width:760px){.design-project-row{grid-template-columns:32px minmax(0,1fr);gap:16px;padding:30px 0}.design-project-row:first-child{margin-top:40px}.design-project-row h2{font-size:28px}.design-project-copy{grid-column:2}.design-project-copy p{font-size:15px}.design-project-cta{grid-template-columns:1fr;gap:26px;padding:30px 24px;margin:36px 0 55px}.design-project-cta h2{font-size:30px}.design-project-action .button{font-size:13px;max-width:100%;white-space:normal}}
