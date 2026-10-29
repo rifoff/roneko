@@ -33,3 +33,10 @@ header .logo{width:200px;height:auto;display:block}header>a{flex-shrink:0}@media
 /* The home hero fills the visible viewport at every breakpoint. */
 .hero{height:100vh;height:100dvh;min-height:0;max-height:none}
 @media(max-height:600px){.hero h1{top:110px;font-size:min(19vw,22dvh)}.hero-bottom{bottom:20px}.hero h2{font-size:26px;margin-bottom:12px}.hero p{font-size:12px;max-width:440px;margin-bottom:0}}
+
+/* Direction CTA: visible hover and equivalent keyboard feedback. */
+.feature-text>.pill{display:inline-flex;align-items:center;transition:background-color .22s ease,color .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}
+@media(hover:hover){.feature-text>.pill:hover{background:#fff;color:var(--deep);border-color:#fff;transform:translateY(-3px);box-shadow:0 8px 22px #002f4c35}}
+.feature-text>.pill:focus-visible{background:#fff;color:var(--deep);border-color:#fff;box-shadow:0 8px 22px #002f4c35}
+.feature-text>.pill:active{transform:translateY(0);box-shadow:none}
+@media(prefers-reduced-motion:reduce){.feature-text>.pill{transition:none}.feature-text>.pill:hover{transform:none}}
