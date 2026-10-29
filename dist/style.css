@@ -102,3 +102,10 @@ header .logo{width:200px;height:auto;display:block}header>a{flex-shrink:0}@media
 @media(max-width:950px){.app-consult{padding:34px;gap:28px;grid-template-columns:minmax(0,1.25fr) minmax(240px,1fr)}.consult-action{padding-left:28px}.app-consult h2{font-size:30px}.consult-action .button{font-size:12px;gap:12px}}
 @media(max-width:640px){.app-consult{grid-template-columns:1fr;padding:30px 24px;gap:28px;border-radius:18px}.app-consult h2{font-size:29px}.app-consult p{font-size:14px}.consult-action{border-left:0;border-top:1px solid #cce3ef;padding:26px 0 0;align-items:flex-start;gap:14px}.consult-symbol{display:none}.consult-note{text-align:left}.consult-action .button{font-size:13px;width:100%}.app-consult:before{top:30px;bottom:auto;height:60px}}
 @media(prefers-reduced-motion:reduce){.consult-action .button{transition:none}}
+
+/* Consistent service formats and visible actions on Plans. */
+.plan-service-row .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;padding:16px 24px;max-width:100%;min-height:52px;background:var(--blue);color:#fff;border:1px solid var(--blue);line-height:1.4;white-space:normal;transition:background .2s,border-color .2s,transform .2s}
+.plan-service-row .button:hover{background:var(--deep);border-color:var(--deep);transform:translateY(-2px)}
+.plan-service-row .button:focus-visible{outline:3px solid var(--deep);outline-offset:4px}
+@media(max-width:760px){.plan-service-row .button{padding:14px 18px;font-size:14px;text-align:center}}
+@media(prefers-reduced-motion:reduce){.plan-service-row .button{transition:none}.plan-service-row .button:hover{transform:none}}
