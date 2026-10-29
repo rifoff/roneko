@@ -17,3 +17,5 @@ Illustrative stock photography, not photographs of RONEKO employees or completed
 - projects: https://www.pexels.com/photo/30722592/ (Pexels License)
 - manufacturing: https://unsplash.com/photos/ox5Dv5QD3-8 (Cemrecan Yurtman, Unsplash License)
 - Manrope: https://github.com/google/fonts/tree/main/ofl/manrope (SIL OFL, included with font)
+
+- about-architecture: https://www.pexels.com/photo/7078277/ — Laura Tancredi, Pexels License. Illustrative architecture, not a RONEKO office.

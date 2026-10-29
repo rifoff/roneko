@@ -40,3 +40,12 @@ header .logo{width:200px;height:auto;display:block}header>a{flex-shrink:0}@media
 .feature-text>.pill:focus-visible{background:#fff;color:var(--deep);border-color:#fff;box-shadow:0 8px 22px #002f4c35}
 .feature-text>.pill:active{transform:translateY(0);box-shadow:none}
 @media(prefers-reduced-motion:reduce){.feature-text>.pill{transition:none}.feature-text>.pill:hover{transform:none}}
+
+/* All opening screens match the visible viewport, with responsive content spacing. */
+.page-hero,.page-hero.graphic,.page-hero.account{height:100vh;height:100dvh;min-height:0;max-height:none;display:flex;align-items:center;padding:125px 4.7% 90px}
+.page-hero .hero-art{top:140px;bottom:80px;height:auto;max-height:calc(100dvh - 220px)}
+.page-about .hero-copy{max-width:950px}.page-about .hero-copy>p{max-width:850px}.page-about .intro-line{display:block;white-space:nowrap}.page-about.engineering{background-position:center 55%}
+@media(max-width:1000px){.page-about .intro-line{display:inline;white-space:normal}.page-about .hero-copy>p{max-width:660px}}
+@media(max-width:640px){.page-hero,.page-hero.graphic,.page-hero.account{padding:120px 5% 75px;align-items:center}.page-hero .hero-breadcrumb{margin-bottom:24px}.page-hero h1{margin-bottom:22px}.page-hero .hero-actions{margin-top:24px}.page-hero.account{align-items:flex-start;padding-bottom:260px}.page-hero.account .hero-art{top:auto;bottom:65px;height:190px;max-height:24dvh;width:55%;right:22.5%}.page-hero.account .hero-copy{max-width:100%}.page-hero .hero-bottomline{bottom:22px}}
+@media(max-height:740px){.page-hero,.page-hero.graphic,.page-hero.account{padding-top:110px;padding-bottom:65px}.page-hero .hero-breadcrumb{margin-bottom:20px}.page-hero .eyebrow{margin-bottom:16px}.page-hero h1{font-size:clamp(32px,5vw,62px);margin-bottom:20px}.page-hero .hero-copy>p{font-size:14px;line-height:1.5}.page-hero .hero-actions{margin-top:20px}.page-hero .hero-1c{margin-top:15px;width:62px}.page-hero .hero-bottomline{bottom:18px;padding-top:12px}}
+@media(max-width:640px) and (max-height:740px){.page-hero.account .hero-art{height:130px;bottom:55px}.page-hero.account .hero-copy>p{font-size:13px}.page-hero h1{font-size:34px}}
